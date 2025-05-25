@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello World! This is a sample static website Deployed by <i>Heinux</i>.
+          Hello World! This is a sample static website.
         </p>
         <a
           className="App-link"
