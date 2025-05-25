@@ -25,8 +25,8 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::475057824660:role/GitHubAction-AssumeRoleWithAction
-          aws-region: us-east-2
+          role-to-assume: ${{ secrets.AWS_ASSUME_ROLE }}
+          aws-region: ${{ secrets.AWS_REGION }}
       - name: Build React App
         run: npm install && npm run build
       - name: Deploy app build to S3 bucket
